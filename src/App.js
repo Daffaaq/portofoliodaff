@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route} from 'react-router-dom';
 import Navbar from './components/navbar';
 import Beranda from './components/beranda';
 import Tentang from './components/tentang';
