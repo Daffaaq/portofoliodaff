@@ -11,6 +11,7 @@ const App = () => {
       <div className="App">
         <Navbar />
         <Route exact path="/" component={Beranda} />
+        <Route exact path="/beranda" component={Beranda} />
         <Route path="/tentang" component={Tentang} />
         <Route path="/kontak" component={Kontak} />
       </div>
