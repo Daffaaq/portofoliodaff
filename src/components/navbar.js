@@ -22,26 +22,28 @@ const NavbarLink = ({ to, children }) => {
     );
 };
 
+const navItems = [
+    { to: '/beranda', label: 'HOME' },
+    { to: '/tentang', label: 'ABOUT' },
+    { to: '/portofolio', label: 'PORTFOLIO' },
+    { to: '/kontak', label: 'CONTACT' },
+];
+
 const NavbarComponent = () => {
+    const renderNavItems = () => {
+        return navItems.map((item, index) => (
+            <Nav.Item className="navbarItem" key={index}>
+                <NavbarLink to={item.to}>{item.label}</NavbarLink>
+            </Nav.Item>
+        ));
+    };
+
     return (
         <Navbar className="navbar-custom" expand="lg">
             <Navbar.Brand className="navbar-left-element">Portfolio</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-                <Nav>
-                    <Nav.Item className="navbarItem">
-                        <NavbarLink to="/beranda">HOME</NavbarLink>
-                    </Nav.Item>
-                    <Nav.Item className="navbarItem">
-                        <NavbarLink to="/tentang">ABOUT</NavbarLink>
-                    </Nav.Item>
-                    <Nav.Item className="navbarItem">
-                        <NavbarLink to="/portofolio">PORTOFOLIO</NavbarLink>
-                    </Nav.Item>
-                    <Nav.Item className="navbarItem">
-                        <NavbarLink to="/kontak">CONTACT</NavbarLink>
-                    </Nav.Item>
-                </Nav>
+                <Nav>{renderNavItems()}</Nav>
             </Navbar.Collapse>
         </Navbar>
     );
