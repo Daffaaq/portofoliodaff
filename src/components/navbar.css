@@ -57,3 +57,35 @@
   font-size: 24px;
   color: #3f2305;
 }
+
+.navbar-custom .nav-link {
+  font-weight: normal;
+  transition: all 0.3s ease;
+}
+
+.navbar-custom .nav-link.active {
+  font-weight: bold;
+  color: #00334E;
+}
+
+.navbar-custom .nav-link:hover {
+  font-weight: bold;
+  color: #145374;
+}
+
+.navbar .nav-link:hover {
+  animation: neonHover 0.5s infinite alternate;
+}
+
+@keyframes neonHover {
+  0% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 0 0 10px #40128b, 0 0 20px #40128b, 0 0 40px #40128b,
+      0 0 80px #40128b;
+  }
+  100% {
+    text-shadow: none;
+  }
+}

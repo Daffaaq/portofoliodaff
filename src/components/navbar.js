@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './navbar.css';
 
 const NavbarLink = ({ to, children }) => {
+    const [isActive, setIsActive] = useState(false);
+
+    const handleClick = () => {
+        setIsActive(true);
+    };
+
     return (
-        <Nav.Link as={Link} to={to}>{children}</Nav.Link>
+        <Nav.Link
+            as={NavLink}
+            to={to}
+            activeClassName={isActive ? 'active' : ''}
+            onClick={handleClick}
+        >
+            {children}
+        </Nav.Link>
     );
 };
 
