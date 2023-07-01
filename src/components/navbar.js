@@ -9,22 +9,25 @@ const NavbarLink = ({ to, children }) => {
     );
 };
 
-const navbarLinks = [
-    { to: '/', text: 'HOME' },
-    { to: '/tentang', text: 'ABOUT' },
-    { to: '/portofolio', text: 'PORTOFOLIO' },
-    { to: '/kontak', text: 'CONTACT' }
-];
-
 const NavbarComponent = () => {
     return (
         <Navbar className="navbar-custom" expand="lg">
+            <Navbar.Brand className="navbar-left-element">Portfolio</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                 <Nav>
-                    {navbarLinks.map((link, index) => (
-                        <NavbarLink key={index} to={link.to}>{link.text}</NavbarLink>
-                    ))}
+                    <Nav.Item className="navbarItem">
+                        <NavbarLink to="/beranda">HOME</NavbarLink>
+                    </Nav.Item>
+                    <Nav.Item className="navbarItem">
+                        <NavbarLink to="/tentang">ABOUT</NavbarLink>
+                    </Nav.Item>
+                    <Nav.Item className="navbarItem">
+                        <NavbarLink to="/portofolio">PORTOFOLIO</NavbarLink>
+                    </Nav.Item>
+                    <Nav.Item className="navbarItem">
+                        <NavbarLink to="/kontak">CONTACT</NavbarLink>
+                    </Nav.Item>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
