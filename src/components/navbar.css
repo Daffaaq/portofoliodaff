@@ -53,6 +53,7 @@
 }
 
 .navbar-left-element {
+  margin-left: 20px;
   font-family: "Poppins", sans-serif;
   font-size: 24px;
   color: #3f2305;
@@ -70,7 +71,7 @@
 
 .navbar-custom .nav-link:hover {
   font-weight: bold;
-  color: #8FACC0;
+  color: #8facc0;
 }
 
 .navbar .nav-link:hover {

@@ -6,22 +6,22 @@ const Beranda = () => {
         <div className="beranda-container">
             <div className="content-wrapper">
                 <div className="text-container">
-                    <h1 className="title" style={{ fontSize: '60px' }}>Hello, It's Me</h1>
-                    <h2 className="subtitle" style={{ fontSize: '72px' }}>Daffa Aqila Rahmatullah</h2>
-                    <h2 className="subtitle" style={{ fontSize: '68px' }}>And I'm a UI/UX Designer</h2>
-                    <h4 className="subtitle justify-text" style={{ fontSize: '30px' }}>
+                    <h1 className="title">Hello, It's Me</h1>
+                    <h2 className="subtitle1">Daffa Aqila Rahmatullah</h2>
+                    <h2 className="subtitle2">And I'm a UI/UX Designer</h2>
+                    <h4 className="subtitle justify-text">
                         As a novice UI/UX Designer, I possess exceptional
                     </h4>
-                    <h4 className="subtitle justify-text" style={{ fontSize: '30px' }}>
+                    <h4 className="subtitle justify-text">
                         talent and unwavering enthusiasm for creating
                     </h4>
-                    <h4 className="subtitle justify-text" style={{ fontSize: '30px' }}>
+                    <h4 className="subtitle justify-text">
                         captivating and satisfying designs. I am driven by a
                     </h4>
-                    <h4 className="subtitle justify-text" style={{ fontSize: '30px' }}>
+                    <h4 className="subtitle justify-text">
                         strong passion to craft user-centered experiences that
                     </h4>
-                    <h4 className="subtitle justify-text" style={{ fontSize: '30px' }}>
+                    <h4 className="subtitle justify-text">
                         seamlessly blend aesthetics and functionality.
                     </h4>
                     <div className="icon">
@@ -43,12 +43,10 @@ const Beranda = () => {
                             <button className="button">More About Me</button>
                         </a>
                     </div>
-
                 </div>
                 <div className="image-container">
                     <img src="/Daffa.jpeg" alt="Foto Daffa" className="circle-image" />
                 </div>
-
             </div>
         </div>
     );
