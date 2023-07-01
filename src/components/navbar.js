@@ -6,12 +6,13 @@ import './navbar.css';
 const NavbarComponent = () => {
     return (
         <Navbar className="navbar-custom" expand="lg">
-            <Navbar.Brand href="/">Beranda</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="ml-auto">
-                    <Nav.Link href="/tentang">Tentang</Nav.Link>
-                    <Nav.Link href="/kontak">Kontak</Nav.Link>
+            <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+                <Nav>
+                    <Nav.Link href="/">HOME</Nav.Link>
+                    <Nav.Link href="/tentang">ABOUT</Nav.Link>
+                    <Nav.Link href="/portofolio">PORTOFOLIO</Nav.Link>
+                    <Nav.Link href="/kontak">CONTACT</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

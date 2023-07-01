@@ -4,6 +4,7 @@ import Navbar from './components/navbar';
 import Beranda from './components/beranda';
 import Tentang from './components/tentang';
 import Kontak from './components/kontak';
+import Portofolio from './components/portofolio';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route exact path="/" component={Beranda} />
         <Route exact path="/beranda" component={Beranda} />
         <Route path="/tentang" component={Tentang} />
+        <Route path="/portofolio" component={Portofolio} />
         <Route path="/kontak" component={Kontak} />
       </div>
     </BrowserRouter>

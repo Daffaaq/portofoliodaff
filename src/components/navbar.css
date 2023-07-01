@@ -1,6 +1,7 @@
 .navbar {
   background-color: #f2f2f2;
   padding: 10px;
+  height: 64px;
 }
 
 .navbarList {
@@ -21,10 +22,26 @@
 }
 
 .navbar-custom {
-  background-color: green;
+  background-color: #DFD7BF;
 }
+
 
 .navbar-custom .nav-link {
   color: white;
 }
+
+.navbarList {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .nav-link {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #3F2305;
+}
+
 
