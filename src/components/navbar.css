@@ -65,12 +65,12 @@
 
 .navbar-custom .nav-link.active {
   font-weight: bold;
-  color: #00334E;
+  color: #e3b587;
 }
 
 .navbar-custom .nav-link:hover {
   font-weight: bold;
-  color: #145374;
+  color: #8FACC0;
 }
 
 .navbar .nav-link:hover {
